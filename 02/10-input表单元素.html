@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>-input表单元素-</title>
+</head>
+<body>
+    <!-- 表单项标签：
+    
+    input 标签  用于收集信息
+        type=“text”:文本输入框
+        type=“password”：密码输入框
+        type=“radio”:单选按钮
+        type=“checkbox”:复选框
+        type=“date”(h5提供的日期组件）
+        type=“tel”(h5提供的组件）
+        type=“file”:上传文件
+        type=“button”:普通按钮，必须指定value属性
+        type=“submit”:提交
+        type=“reset”:重置按钮
+        type=”hidden":隐藏域
+        selsct标签 下拉菜单
+        option:下拉菜单（应用场景：省市联动）
+        textarea:文本域（应用场景：个人自我描述）
+
+        1. name和value是每个表单元素都有的属性值主要给后台人员使用.
+        2. name表单元素的名字,要求单选按钮和复选框要有相同的name值
+        3. checked属性主要针对于单选按钮和复选框主要作用一打开页面,就要可以默认选中某个表单元素.
+        4. maxlength是用户可以在表单元素输入的最大字符数一般较少使用.
+
+
+
+
+    -->
+    <form>
+        <!-- test 文本框 用户可以里面输入任何文字 -->
+        用户名： <input type="text"> <br />
+
+        <!-- password 密码框 用户看不见输入密码 -->
+        密码： <input type="password"> <br />
+        
+        <!-- type=“radio”:单选按钮 必须要有相同的名字name，才可以实现多选1-->
+        <!-- checked属性主要针对于单选按钮和复选框主要作用一打开页面,就要可以默认选中某个表单元素. -->
+        单选框 选择性别：
+        <input type="radio" value="男" name="gerder" checked="checked" />男 
+        <input type="radio" value="女" name="gerder" />女 <br />
+
+        <!-- type=“checkbox”:复选框 -->
+        <input type="checkbox" value="华为" name="company" />华为
+        <input type="checkbox" value="阿里巴巴" name="company" />阿里巴巴
+        <input type="checkbox" name="腾讯" name="company" />腾讯 <br />
+
+        <!-- type=“date”(h5提供的日期组件） -->
+        出生日期：
+        <input type="date" name="data" /> <br />
+
+        <!-- type=“tel”(h5提供的组件） -->
+        手机号：
+        <input type="tel" value="手机号" name="phone" /> <br />
+
+        <!-- type=“file”:上传文件 -->
+        <input type="file" name="photo" /> <br />
+
+        <!-- type=”hidden":隐藏域 -->
+        <input type="hidden" name="id" /> <br />
+
+        <!--
+            selsct标签 下拉菜单
+                option:下拉菜单（应用场景：省市联动）
+                textarea:文本域（应用场景：个人自我描述） 
+        -->
+        籍贯：
+        <select name="jiguan">
+            <option value="请选择">-请选择-</option>
+            <option value="广东省">-广东省-</option>
+            <option value="湛江">-湛江-</option>
+            <option value="吴川">-吴川-</option>
+
+        </select>
+        <br />
+        自我描述：
+        <!-- 
+            rows:可以写多少行
+            cols:一行中的字符数
+         -->
+         <textarea rows="5" role="20">
+看看这是什么
+         </textarea>
+
+         <select name="anniu">
+            <input type="button" value="普通按钮">
+
+            <!-- 点击了提交按钮，可以把 表单域 from 里面的表单元素 里面的值 提交给后台服务器 -->
+            <input type="submit" value="提交">
+
+            <!-- 重置按钮可以还原表单元素初始的默认状态 -->
+            <input type="reset" value="重置">
+        </select>
+    
+    
+    </form>
+</body>
+</html>
