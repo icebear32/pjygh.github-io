@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lable标签</title>
+</head>
+<body>
+    <p>
+        目标：
+
+            label标签主要目的是为了提高用户体验。 为用户提高最优秀的服务。
+
+        概念：
+
+            label 标签为 input 元素定义标注（标签）。
+
+        作用：
+
+            用于绑定一个表单元素, 当点击label标签的时候, 被绑定的表单元素就会获得输入焦点。
+            当我们鼠标点击 label标签里面的文字时， 光标会定位到指定的表单里面
+
+        核心：《label》标签的for属性应当与相关元素的id属性相同
+
+        如何绑定元素呢？
+
+            第一种用法就是用label直接包括input表单。
+                <!-- 
+                    <label> 用户名： <input type="radio" name="usename" value="请输入用户名">   </label> 
+                -->
+                适合单个表单选择
+
+            第二种用法 for 属性与表单的id关联，用于规定 label 与哪个表单元素绑定。
+            <!-- 
+                <label for="sex">男</label>
+                <input type="radio" name="sex"  id="sex"> 
+            -->
+
+    </p>
+
+    <label for="text">用户名：</label>
+    <input type="text" id="text" >
+</body>
+</html>

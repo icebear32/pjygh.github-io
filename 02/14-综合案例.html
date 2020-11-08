@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+</head>
+<body>
+    
+    <form action="" method="POST" role="form">
+        <legend>假面骑士调查表</legend>
+    
+        <div class="form-group">
+            <label for="name">姓名</label>
+            <input type="text" id="name" > <br/>
+
+            <label for="sex">性别</label>
+            男<input type="radio" value="男" id="sex" name="gerder">
+            女<input type="radio" value="女" id="sex" name="gerder"> <br />
+
+            <label for="pwd">密码</label>
+            <input type="password" id="pwd"> <br/>
+
+            <label for="data">生日</label>
+            <input type="date" id="date" /> <br />
+
+            空我 <input type="checkbox" value="空我" name="cp" />
+            龙骑 <input type="checkbox" value="龙骑" name="cp" />
+            faiz <input type="checkbox" value="faiz" name="cp" />
+            甲斗 <input type="checkbox" value="甲斗" name="cp" />
+            钢斗 <input type="checkbox" value="钢斗" name="cp" />
+            阿尔法 <input type="checkbox" value="阿尔法" name="cp" />
+            欧米茄 <input type="checkbox" value="欧米茄" name="cp" />
+            <br />
+
+            自我介绍：
+            <textarea cols="50" rows="10"> 
+你喜欢的假面骑士是什么？为什么喜欢他？
+            </textarea>
+            <br />
+
+            <select name="anniu">
+                <input type="button" value="普通按钮">
+    
+                <!-- 点击了提交按钮，可以把 表单域 from 里面的表单元素 里面的值 提交给后台服务器 -->
+                <input type="submit" value="提交">
+    
+                <!-- 重置按钮可以还原表单元素初始的默认状态 -->
+                <input type="reset" value="重置">
+            </select>
+
+        </div>
+    
+        
+    
+     
+    
+    
+</body>
+</html>
