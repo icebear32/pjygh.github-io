@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css文字属性之复合属性写法</title>
+    <style>
+        div {
+            /* font-style: italic;
+            font-weight: 700;
+            font-size: 16px;
+            font-family: '微软雅黑'; */
+            /* 这种形式要写太多，不方便 */
+            /* 简写 */
+            /* font: font-style font-weight font-size/line-height font-family; */
+            font: italic 700 16px '微软雅黑';
+            /* 不要更换顺序 每个属性要隔开 */
+            /* 不需要属性可以省略（取默认值） 但必须保留 font-size 和 font-family 属性 否则不起作用 */
+        }
+    </style>
+</head>
+<body>
+   <div> 想要 div 文字变倾斜 加粗 字号设置为16像素 并且 是微软雅黑</div>
+</body>
+</html>

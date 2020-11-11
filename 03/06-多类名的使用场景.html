@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多类名的使用场景</title>
+    <!-- 
+        标签元素相同的样式放在一个类里面
+        标签可以调用这个公共的类，然后再调用自己独有的类
+        节省css代码，统一修改方便
+     -->
+    <style>
+        .box {
+            width: 250px;
+            height: 200px;
+            font-size: 40px;
+        }
+        .red {
+            /* 背景颜色 */
+            background-color: red;
+        }
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box red">你还怕大雨吗</div>
+    <div class="box green">小白</div>
+    <div class="box red">你瞒我瞒</div>
+</body>
+</html>
