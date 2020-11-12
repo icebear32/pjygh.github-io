@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css文本属性之装饰文本t</title>
+    <style>
+        h2 {
+            /* 下划线 */
+            text-decoration: underline;
+        }
+        div {
+            /* 删除线 */
+            text-decoration: line-through;
+        }
+        p {
+            /* 上划线 */
+            text-decoration: overline;
+        }
+        a {
+            /* 取消a默认的下划线 */
+            text-decoration: none;
+
+            /* 把链接的字体颜色变成黑色 */
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1> 属性值 : none 表示默认的,没有装饰线(最常用)</h1>
+    <h2>来一个下划线</h2>
+    <div>来一个删除线(不常用)</div>
+    <p>来一个上划线（几乎不用）</p>
+
+    <a href="#">链接默认都有下划线,用none把下划线去掉,用color把链接亮字体调黑</a>
+</body>
+</html>
