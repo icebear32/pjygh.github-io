@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15-css的背景之背景位置-方位名词</title>
+    <style>
+        div {
+            width: 600px;
+            height: 600px;
+            background-color: aquamarine;
+            background-image: url(OIP.jpg);
+            background-repeat: no-repeat;
+
+            /* background-position: 方位名词; */
+            /* background-position: center top; */
+            /* background-position: top center; */
+            
+            /* background-position: top center; */
+            /* 如果是方位名词right centerl和 center right效果是等价的跟顺序没有关系 */
+            /* background-position: center right; */
+            
+            /* 
+            此时水平一定是靠右侧对齐  
+            第二个参数省略y 轴是垂直居中显示的 
+            */
+            /* background-position: right; */
+
+            /*
+            此时第一个参数一定是 top y轴顶部对齐 
+            第二个参数省略x 轴是水平居中显示的
+            */
+            background-position: top;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        CSS的背景
+            通过CSS背景属性，可以给页面元素添加背景样式
+            背景属性可以设置背景颜色、背景图片、背景平铺、背景图片位置、背景图像固定等。
+
+        背景图片位置
+            利用background-position属性可以改变图片在背景中的位置。
+                background-position: x y;
+            
+            参数代表的意思是:×坐标和y坐标。可以使用方位名词或者精确单位
+
+            ----------------------------------------------------------------
+            参数值      说明
+            ----------------------------------------------------------------
+            length      百分数|由浮点数字和单位标识符组成的长度值
+            ----------------------------------------------------------------
+            position    top | center | bottom | left | center | right 方位名词
+            ----------------------------------------------------------------
+
+
+            参数是方位名词
+                如果指定的两个值都是方位名词，则两个值前后顺序无关，比如left top和top left 效果一致
+
+                如果只指定了一个方位名词，另一个值省略，则第二个值默认居中对齐
+
+
+     -->
+     <div></div>
+</body>
+</html>
