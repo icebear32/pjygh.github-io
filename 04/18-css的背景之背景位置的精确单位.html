@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18-css的背景之背景位置的精确单位</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: aquamarine;
+            background-image: url(icon.png);
+            background-repeat: no-repeat;
+
+            /* x轴 y轴 */
+            /* 如果参数值是精确坐标，那么第一个肯定是x坐标，第二个一定是y坐标 */
+            /* background-position: 20px 50px; */
+
+            /* 如果只指定了一个方位名词，另一个值省略，则第二个值默认居中对齐 */
+            background-position: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        cSS的背景
+            通过CSS背景属性，可以给页面元素添加背景样式
+            背景属性可以设置背景颜色、背景图片、背景平铺、背景图片位置、背景图像固定等。
+            
+        背景图片位置
+            1.参数是方位名词
+                如果指定的两个值都是方位名词，则两个值前后顺序无关，比如 left top和top left效果一致
+                如果只指定了一个方位名词，另一个值省略，则第二个值默认居中对齐
+            
+                2.参数是精确单位
+                如果参数值是精确坐标，那么第一个肯定是x坐标，第二个一定是y坐标
+
+
+     -->
+     <div></div>
+</body>
+</html>
