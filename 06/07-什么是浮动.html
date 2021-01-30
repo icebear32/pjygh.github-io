@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>什么是浮动</title>
+    <!-- 
+        float 属性用于创建浮动框，将其移动到一边，直到左边缘或右边缘触及包含块或另一个浮动框的边缘。
+
+        语法：
+            选择器 { float: 属性值; }
+
+        ----------------------------------
+        属性值          |描述
+        ----------------------------------
+        none            |元素不浮动（默认值）
+        ----------------------------------
+        left            |元素向左浮动
+        ----------------------------------
+        right           |元素向右浮动
+        ----------------------------------
+
+     -->
+    <style>
+        .left,
+        .right {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .right {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">左青龙</div>
+    <div class="right">右白虎</div>
+</body>
+
+</html>
